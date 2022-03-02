@@ -4,5 +4,5 @@
 | --- | --- | :---: |
 |개발환경|| |
 |템플릿|v-model, v-html, mustache, v-bind, class | |
-|조건부, 반복문| v-if, v-show, v-for, <template />| |
-|| Methods & Event| |
+|조건부, 반복문| v-if, v-show, v-for, template| |
+|함수|Methods, Event||
