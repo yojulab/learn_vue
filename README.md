@@ -1,5 +1,7 @@
 #### with_vue
-#### refer : https://youtube.com/playlist?list=PLpJDjPqxGWGrkyxxavs2oW-SK3v_8VLwa
+#### refer : 
++ https://youtube.com/playlist
++ https://mailtrap.io/
 | 주제 | 주요 항목 | 참조 |
 | --- | --- | :---: |
 |개발환경|| |
