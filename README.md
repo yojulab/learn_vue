@@ -1,12 +1,13 @@
 #### with_vue
 + official nodejs : https://nodejs.org/
 + official npmjs : https://www.npmjs.com/
-+ official vuejs : https://vuejs.org/
++ official vuejs : https://vuejs.org/. 
 $ node -v. 
 $ npm -v
 $ npm install -g @vue/cli
 $ vue --version
 $ vue create with_vue
+$ npm run serve
 
 #### refer : 
 + https://youtube.com/playlist
