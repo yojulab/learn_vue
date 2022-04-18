@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h3>Hello Vue! {{message}}</h3>
+        <span>{{items}}</span>
+        <ul>
+            <li v-for="item in items">{{item}}</li>
+        </ul>
+        <input type="text" v-model="message">
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'you are so beautiful.',
+                items: ['Vue', 'React', 'Angular'],
+            }
+        })
+    </script>
+    
+</body>
+</html>
