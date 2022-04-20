@@ -1,7 +1,7 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <h1>Hello World</h1>
+  <h2>Hello World</h2>
   <!-- text binding -->
   <p>{{ message }} App</p>
   <!-- Error <p v-text="message">App</p> -->

@@ -2,13 +2,13 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <!-- class binding -->
-  <h1 id="title">Hello World</h1>
-  <h1 v-bind:id="'title'">Hello World</h1>
+  <h2 id="title">Hello World</h2>
+  <h2 v-bind:id="'title'">Hello World</h2>
   <a v-bind:href="bind_url" v-bind:target="'_blank'">Google</a>
   <img v-bind:src="bind_img.src" v-bind:alt="bind_img.alt" />
   <input v-bind:type="bind_input.type" v-bind:value="bind_input.value" />
-  <h1 v-bind:style="bind_style">Hello World</h1>
-  <h1 v-bind:style="[bind_style, bind_style_base]">Hello World</h1>
+  <h2 v-bind:style="bind_style">Hello World</h2>
+  <h2 v-bind:style="[bind_style, bind_style_base]">Hello World</h2>
 </template>
 
 <script>
