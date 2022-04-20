@@ -16,8 +16,10 @@ $ npm run serve
 | 주제 | 주요 항목 | 작성 | 참조 |
 | :---: | --- |  --- | :---: |
 |맛보기|CDN vue2|[html](./helloworld.html)|[uri](https://v2.vuejs.org/v2/guide/installation.html?redirect=true)|
-|개발환경|nodejs,npmjs,vue|[js](./helloworld.js), [vue](./src/App.vue)|[file]()|
-|템플릿|v-model, v-html, mustache, v-bind, class | | |
-|조건부, 반복문| v-if, v-show, v-for, template| | |
+|config|nodejs,npmjs,vue|[js](./helloworld.js), [vue](./src/App.vue)|[file]()|
+|bind|mustache, v-text, v-html|[vue](./src/App_text-binding.vue)| |
+|bind|v-bind |[vue](./src/App_attribute-binding.vue), [vue](./src/App_class-binding.vue) | |
+|condition| v-if, v-show, template|[vue](./src/App_if-randering.vue) | |
+|condition| v-for|[vue](./src/App_for.vue)| |
 |함수|Methods, Event|| |
 #### vscode Extension : vetur
