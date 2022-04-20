@@ -1,34 +1,22 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <!-- v-if -->
-  <h1 v-if="isActive">Hello World</h1>
-
-  <!-- v-once -->
-  <input type="text" name="" id="" v-model="message" />
-  <!-- Try Change Text -->
-  <h2 v-once>Hello {{ message }}</h2>
-  <h2>{{ message }}</h2>
+  <h1>Hello World</h1>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: "App",
-  data() {
-    return {
-      message: "Welcome to Your Vue.js",
-    };
-  },
+  name: 'App',
   // components: {
   //   HelloWorld
   // }
-};
+}
 </script>
 
 <style>
-.app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
