@@ -21,5 +21,7 @@ $ npm run serve
 |bind|v-bind |[vue](./src/App_attribute-binding.vue), [vue](./src/App_class-binding.vue) | |
 |condition| v-if, v-show, template|[vue](./src/App_if-randering.vue) | |
 |condition| v-for|[vue](./src/App_for.vue)| |
-|함수|Methods, Event|| |
+|function|Methods||[vue](./src/App_methods.vue|
+|Event|Events||[vue](./src/App_events.vue)|
+
 #### vscode Extension : vetur
