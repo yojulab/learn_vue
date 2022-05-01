@@ -23,5 +23,6 @@ $ npm run serve
 |condition| v-for|[vue](./src/App_for.vue)| |
 |function|Methods||[vue](./src/App_methods.vue|
 |Event|Events||[vue](./src/App_events.vue)|
+|Form|Form, IMU issue||[vue](./src/App_events.vue)|
 
 #### vscode Extension : vetur
