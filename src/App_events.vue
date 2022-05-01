@@ -1,3 +1,4 @@
+// Event 종류 : stop, capture, self, once, passive, prevent
 <template>
   <button @click.right="increment($event, 5)">right +</button>
   <button @click.left="decrement($event, 5)">left -</button>

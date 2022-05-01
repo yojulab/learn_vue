@@ -17,7 +17,7 @@ export default {
       this.result = this.firstNumber + input;
       return this.result;
     },
-    // subtract: (input) => { // can't use arrow function with method (lexical binding)
+    // subtract: (input) => { // can't use arrow function with method (lexical scope)
     subtract(input01, input02 = 3) {
       this.result = input01 - input02;
       return this.result;
