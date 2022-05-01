@@ -24,5 +24,7 @@ $ npm run serve
 |function|Methods||[vue](./src/App_methods.vue|
 |Event|Events||[vue](./src/App_events.vue)|
 |Form|Form, IMU issue||[vue](./src/App_events.vue)|
+|directives|directives||[vue](./src/App_directives.vue)|
+
 
 #### vscode Extension : vetur
