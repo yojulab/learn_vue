@@ -25,7 +25,7 @@ $ npm run serve
 |Event|Events||[vue](./src/App_events.vue)|
 |Form|Form, IMU(Input Method Editor) issue||[vue](./src/App_events.vue)|
 |directives|directives||[vue](./src/App_directives.vue)|
-|computed|값이 cache되어 method보다 performance 유리||[vue](./src/App_directives.vue)|
-
+|computed|값이 cache되어 method보다 performance 유리||[vue](./src/App_computed.vue)|
+|watch|watch||[vue](./src/App_watch.vue)|
 
 #### vscode Extension : vetur
