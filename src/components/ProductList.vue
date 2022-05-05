@@ -2,7 +2,7 @@
   <ul>
     <li v-for="(product, idx) in products" :key="idx">
       <!-- <h4>{{ product }}</h4> -->
-      <ProductItem :product="product" />
+      <ProductItem :product="product" id="child" />
     </li>
   </ul>
 </template>
