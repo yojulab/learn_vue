@@ -1,4 +1,5 @@
 <template>
+  <h3>{{ msg }} - Object : {{ lectureInfor.title }}</h3>
   <h3>{{ msg }} - message : {{ message }}</h3>
 </template>
 <script>
@@ -9,6 +10,15 @@ export default {
     message: {
       type: String,
       default: "Hello World!",
+    },
+    lectureInfor: {
+      type: Object,
+      default: () => ({
+        title: "-",
+        description: "-",
+        url: "-",
+        image: "-",
+      }),
     },
   },
   data() {

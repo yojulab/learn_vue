@@ -27,5 +27,5 @@ $ npm run serve
 |directives|directives||[vue](./src/App_directives.vue)|
 |computed|값이 cache되어 method보다 performance 유리||[vue](./src/App_computed.vue)|
 |watch|watch||[vue](./src/App_watch.vue)|
-
+|composition|props||[vue](./src/App_watch.vue)|
 #### vscode Extension : vetur

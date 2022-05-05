@@ -1,4 +1,5 @@
 <template>
+  <div><BowToUser :lectureInfor="lectureInfor" /> Add Object</div>
   <div><BowToUser /> default value</div>
   <div><BowToUser :message="message" /></div>
   <button @click="changeMsg()">Change Msg</button>
@@ -18,6 +19,13 @@ export default {
     return {
       message: "Main App.vue !",
       flag: true,
+      lectureInfor: {
+        title: "Vue.js",
+        description:
+          "Vue.js is a progressive framework for building user interfaces",
+        url: "https://vuejs.org/",
+        image: "https://vuejs.org/images/logo.png",
+      },
     };
   },
   methods: {
