@@ -9,6 +9,8 @@ $ vue --version
 $ vue create with_vue
 $ npm run serve
 
+$ npm install axios
+
 #### refer : 
 + https://youtube.com/playlist
 + https://mailtrap.io/ 
@@ -30,4 +32,7 @@ $ npm run serve
 |composition|props||[vue](./src/App_watch.vue)|
 |slot|slot||[vue](./src/App_slot.vue)|
 |teleport|teleport||[vue](./src/App_teleport.vue)|
+|http request|axios||[vue](./src/App_httpRequest.vue)|
+|life cycle|life cycle||[vue](./src/App_lifecycle.vue)|
+
 #### vscode Extension : vetur
