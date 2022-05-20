@@ -34,5 +34,7 @@ $ npm install axios
 |teleport|teleport||[vue](./src/App_teleport.vue)|
 |http request|axios||[vue](./src/App_httpRequest.vue)|
 |life cycle|life cycle||[vue](./src/App_lifecycle.vue)|
+|refs|refs||[vue](./src/App_refs.vue)|
+|mixins|mixins|vue2|[vue](./src/App_mixins.vue)|
 
 #### vscode Extension : vetur
