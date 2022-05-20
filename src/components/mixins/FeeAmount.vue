@@ -7,18 +7,19 @@
 </template>
 
 <script>
+import amountMixin from "../../mixins/amount.js";
 export default {
   name: "FeeAmount",
-  //   mixins: [FeeAmountMixin],
+  mixins: [amountMixin],
   data() {
     return {
-      amount: 0,
+      // amount: 0,
     };
   },
   methods: {
-    addMoney(money) {
-      this.amount += money;
-    },
+    // addMoney(money) {
+    //   this.amount += money;
+    // },
   },
 };
 </script>
