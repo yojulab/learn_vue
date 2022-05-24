@@ -37,5 +37,6 @@ $ npm install axios
 |refs|refs||[vue](./src/apps/App_refs.vue)|
 |mixins|mixins|vue2|[vue](./src/apps/App_mixins.vue)|
 |composition API|composition data|vue3|[vue](./src/apps/App_Composition-data.vue)|
+|composition API|composition method|vue3|[vue](./src/apps/App_composition-methods.vue)|
 
 #### vscode Extension : vetur
