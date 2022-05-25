@@ -7,20 +7,28 @@
 </template>
 
 <script>
-import amountMixin from "../../mixins/amount.js";
+// import amountMixin from "../../mixins/amount.js";
+import amountReusable from "../../composables/amount_ref.js";
 
 export default {
   name: "SavingAmount",
-  mixins: [amountMixin],
-  data() {
+  // mixins: [amountMixin],
+  // data() {
+  //   return {
+  //     amount: 100,
+  //   };
+  // },
+  // methods: {
+  //   // addMoney(money) {
+  //   //   this.amount += money;
+  //   // },
+  // },
+  setup() {
+    const { amount, addMoney } = amountReusable(100);
     return {
-      amount: 100,
+      amount,
+      addMoney,
     };
-  },
-  methods: {
-    // addMoney(money) {
-    //   this.amount += money;
-    // },
   },
 };
 </script>

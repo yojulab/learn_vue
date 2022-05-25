@@ -40,5 +40,6 @@ $ npm install axios
 |composition API|composition method|vue3|[vue](./src/apps/App_composition-methods.vue)|
 |composition API|composition wait|vue3|[vue](./src/apps/App_composition-wait.vue)|
 |composition API|composition ifecycle(?error)|vue3|[vue](./src/apps/App_composition-ifecycle.vue|
+|composition API|composition reusability|vue3|[vue](./src/apps/App_composition-reusability.vue|
 
 #### vscode Extension : vetur
