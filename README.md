@@ -18,6 +18,7 @@ $ npm install axios
 $ npm install
 ```
 #### refer : 
++ 실무 프로젝트에 적용하면 좋은 내용 정리 : https://jess2.xyz/vue/vue-tip/
 + https://youtube.com/playlist
 + https://mailtrap.io/ 
 
