@@ -3,6 +3,7 @@
 + official npmjs : https://www.npmjs.com/
 + official vuejs : https://vuejs.org/. 
 ### first time
+```
 $ node -v. 
 $ npm -v
 $ npm install -g @vue/cli
@@ -11,9 +12,11 @@ $ vue create with_vue
 $ npm run serve
 
 $ npm install axios
-### second time
+```
+### second times
+```
 $ npm install
-
+```
 #### refer : 
 + https://youtube.com/playlist
 + https://mailtrap.io/ 
