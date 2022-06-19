@@ -29,7 +29,7 @@ $ npm install
 |bind|v-bind |[vue](./src/apps/App_attribute-binding.vue), [vue](./src/apps/App_class-binding.vue) | |
 |condition| v-if, v-show, template|[vue](./src/apps/App_if-randering.vue) | |
 |condition| v-for|[vue](./src/apps/App_for.vue)| |
-|function|Methods||[vue](./src/apps/App_methods.vue|
+|function|methods|[vue](./src/apps/App_methods.vue)||
 |Event|Events||[vue](./src/apps/App_events.vue)|
 |Form|Form, IMU(Input Method Editor) issue||[vue](./src/apps/App_events.vue)|
 |directives|directives||[vue](./src/apps/App_directives.vue)|
