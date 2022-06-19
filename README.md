@@ -24,7 +24,7 @@ $ npm install
 
 | 주제 | 주요 항목 | 작성 | 참조 |
 | :---: | --- |  --- | :---: |
-|맛보기|CDN vue2|[html](./helloworld.html)|[uri](https://v2.vuejs.org/v2/guide/installation.html?redirect=true)|
+|맛보기|npm random, CDN vue2|[html](./helloworld.html)|[uri](https://v2.vuejs.org/v2/guide/installation.html?redirect=true)|
 |config|nodejs,npmjs,vue|[js](./helloworld.js), [vue](./src/apps/App.vue)|[file]()|
 |bind|mustache, v-text, v-html|[vue](./src/apps/App_text-binding.vue)| |
 |bind|v-bind |[vue](./src/apps/App_attribute-binding.vue), [vue](./src/apps/App_class-binding.vue) | |
