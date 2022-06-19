@@ -17,6 +17,7 @@ $ npm install axios
 ```
 $ npm install
 ```
+#### vscode Extension : vetur
 #### refer : 
 + 실무 프로젝트에 적용하면 좋은 내용 정리 : https://jess2.xyz/vue/vue-tip/
 + https://youtube.com/playlist
@@ -48,5 +49,3 @@ $ npm install
 |composition API|composition wait|vue3|[vue](./src/apps/App_composition-wait.vue)|
 |composition API|composition ifecycle(?error)|vue3|[vue](./src/apps/App_composition-ifecycle.vue|
 |composition API|composition reusability|vue3|[vue](./src/apps/App_composition-reusability.vue|
-
-#### vscode Extension : vetur
