@@ -2,6 +2,14 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <h2
+    :class="[
+      isDone === true ? 'line-through' : 'line-underline',
+      isColor === true ? 'text-red' : 'text-green',
+    ]"
+  >
+    Hello World
+  </h2>
+  <h2
     :class="{ 'line-through': isDone === true, 'text-red': isColor === true }"
   >
     Hello World
@@ -34,8 +42,14 @@ export default {
 .line-through {
   text-decoration: line-through;
 }
+.line-underline {
+  text-decoration: underline;
+}
 .text-red {
   color: red;
+}
+.text-green {
+  color: green;
 }
 
 /* #app {

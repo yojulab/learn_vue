@@ -17,7 +17,7 @@ $ npm install axios
 ```
 $ npm install
 ```
-#### vscode Extension : vetur
+#### vscode Extension : vetur, vue 3 snippet, prettier-code formatter
 #### refer : 
 + 실무 프로젝트에 적용하면 좋은 내용 정리 : https://jess2.xyz/vue/vue-tip/
 + https://youtube.com/playlist
@@ -26,9 +26,9 @@ $ npm install
 | 주제 | 주요 항목 | 작성 | 참조 |
 | :---: | --- |  --- | :---: |
 |맛보기|npm random, CDN vue2|[html](./vue_with_cdn.html)|[uri](https://v2.vuejs.org/v2/guide/installation.html?redirect=true)|
-|config|nodejs,npmjs,vue|[js](./helloworld.js), [vue](./src/apps/App.vue)|[file]()|
-|bind|mustache, v-text, v-html|[vue](./src/apps/App_text-binding.vue)| |
-|bind|v-bind |[vue](./src/apps/App_attribute-binding.vue), [vue](./src/apps/App_class-binding.vue) | |
+|config|nodejs,npmjs,vue|[js](./helloworld.js), [vue](./src/App.vue)||
+|text bind|mustache, v-text, v-html|[vue](./src/apps/App_text-binding.vue)| |
+| v-bind| attribute / style v-bind |[vue](./src/apps/App_attribute-binding.vue), [vue](./src/apps/App_style-binding.vue) | |
 |condition| v-if, v-show, template|[vue](./src/apps/App_if-randering.vue) | |
 |condition| v-for|[vue](./src/apps/App_for.vue)| |
 |function|methods|[vue](./src/apps/App_methods.vue)||
