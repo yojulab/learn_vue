@@ -1,11 +1,11 @@
 <template>
-  <!-- template -->
+  <!-- template : div elements 사용 시 <div>가 <ul> 안에 남음. -->
   <ul>
-    <template v-if="!isActive">
+    <div v-if="!isActive">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
-    </template>
+    </div>
     <template v-else>
       <li>Item 4</li>
       <li>Item 5</li>
@@ -50,13 +50,4 @@ export default {
 };
 </script>
 
-<style>
-.app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
