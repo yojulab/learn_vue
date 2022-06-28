@@ -1,4 +1,6 @@
 <template>
+  <h2>squared {{ squared(3) }}</h2>
+  <h2>multiply {{ multiply(5, 10) }}</h2>
   <h2>subtract {{ subtract(5) }}</h2>
   <h2>subtract {{ subtract(5, 4) }} without setting param default in method</h2>
   <h2>add : {{ add(10) }}</h2>
@@ -22,6 +24,12 @@ export default {
     subtract(input01, input02 = 3) {
       this.result = input01 - input02;
       return this.result;
+    },
+    multiply(first, second = 5) {
+      return first * second;
+    },
+    squared(number) {
+      return this.multiply(number);
     },
   },
   data() {
