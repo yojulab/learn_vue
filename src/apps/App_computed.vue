@@ -1,4 +1,5 @@
 <template>
+  <!-- keep changing value and the value is in memory cache -->
   <div>
     <label for="message">message : reload method with replacing value</label>
     <input type="text" name="message" id="" v-model="message" />
@@ -9,7 +10,7 @@
   </div>
   <h3>method scores : {{ getScores() }}</h3>
   <h3>computed scores : {{ computeScores }}</h3>
-  <h3>concatenate address : {{ concatenateAddress }}</h3>
+  <h3>concatenate address : {{ concatenateLocation }}</h3>
   <h2>data : {{ location.street }} {{ location.city }} {{ location.state }}</h2>
 </template>
 
@@ -24,7 +25,7 @@ export default {
     },
   },
   computed: {
-    concatenateAddress() {
+    concatenateLocation() {
       return `${this.location.street} - ${this.location.city} - ${this.location.state}`;
     },
     computeScores() {

@@ -14,33 +14,22 @@
 <script>
 export default {
   name: "App",
-  data() {
-    return {
-      message: "Hello World",
-      price: 100,
-      receipt: {
-        foods: 4000,
-        drinks: 2000,
-        shopping: 1000,
-      },
-    };
-  },
   watch: {
     message: {
       handler(newMessage, oldMessage) {
         console.log(newMessage, oldMessage);
       },
-      immediate: true, // 최초에도 실행하게 하는 것
+      immediate: true, // 처음 로딩 시 실행 시킴
     },
-    // receipt(newReceipt, oldReceipt) {  // 이렇게 쓰면 안됨
-    //   console.log(newReceipt, oldReceipt);
-    // },
     receipt: {
       handler(newValue, oldValue) {
         console.log(`receipt changed ${newValue} to ${oldValue}`);
       },
-      deep: true,
+      deep: true, // for object
     },
+    // receipt(newReceipt, oldReceipt) {  // 이렇게 쓰면 안됨
+    //   console.log(newReceipt, oldReceipt);
+    // },
     price(newPrice, oldPrice) {
       console.log(`price changed from ${oldPrice} to ${newPrice}`);
       if (newPrice > 200 && newPrice > oldPrice) {
@@ -52,9 +41,17 @@ export default {
       }
     },
   },
-  // components: {
-  //   HelloWorld
-  // }
+  data() {
+    return {
+      message: "Hello World",
+      price: 100,
+      receipt: {
+        foods: 4000,
+        drinks: 2000,
+        shopping: 1000,
+      },
+    };
+  },
 };
 </script>
 

@@ -32,11 +32,11 @@ $ npm install
 |condition| v-if, v-show, template|[vue](./src/apps/App_if-randering.vue) | |
 |condition| v-for|[vue](./src/apps/App_for.vue)| |
 |function|methods|[vue](./src/apps/App_methods.vue)||
-|Event|Events||[vue](./src/apps/App_events.vue)|
-|Form|Form, IMU(Input Method Editor) issue||[vue](./src/apps/App_forms.vue)|
-|directives|directives||[vue](./src/apps/App_directives.vue)|
-|computed|값이 cache되어 method보다 performance 유리||[vue](./src/apps/App_computed.vue)|
-|watch|watch||[vue](./src/apps/App_watch.vue)|
+|Event|Events|[vue](./src/apps/App_events.vue)||
+|Form|Form, IMU(Input Method Editor) issue|[vue](./src/apps/App_forms.vue)||
+|directives|directives|[vue](./src/apps/App_directives.vue)||
+|computed|cache되어 method보다 performance 유리|[vue](./src/apps/App_computed.vue)||
+|watch|watch|[vue](./src/apps/App_watch.vue)||
 |composition|props||[vue](./src/apps/App_watch.vue)|
 |slot|slot||[vue](./src/apps/App_slot.vue)|
 |teleport|teleport||[vue](./src/apps/App_teleport.vue)|
