@@ -1,4 +1,5 @@
 <template>
+  <!-- https://vuejs.org/api/built-in-directives.html -->
   highlight : <input type="text" name="" id="" v-highlight /><br />
   focus : <input type="text" v-focus name="" id="" />
   <h4 v-pre>Pre : {{ message }}</h4>

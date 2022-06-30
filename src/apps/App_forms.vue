@@ -1,4 +1,5 @@
 <template>
+  <!-- IME(Input Method Editor) : 한글 입력 문제 요인 @input="setIssueIMU" -->
   <div>
     {{ user }}
     <div>
