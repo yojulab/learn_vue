@@ -1,5 +1,7 @@
 <template>
-  <div><BowToUser :lectureInfor="lectureInfor" /> Add Object</div>
+  <div id="none-prop">
+    <BowToUser :lectureInfor="lectureInfor" /> Add Object
+  </div>
   <div><BowToUser /> need to set default value on BowToUser</div>
   <div><BowToUser :propMessage="message" :propFlag="flag" /></div>
   <div><BowToUser :propMessage="message" /></div>
