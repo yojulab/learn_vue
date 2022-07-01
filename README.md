@@ -37,7 +37,7 @@ $ npm install
 |directives|directives|[vue](./src/apps/App_directives.vue)||
 |computed|cache되어 method보다 performance 유리|[vue](./src/apps/App_computed.vue)||
 |watch|watch|[vue](./src/apps/App_watch.vue)||
-|composition|props||[vue](./src/apps/App_watch.vue)|
+|composition|props|[vue](./src/apps/App_componets_props.vue)||
 |slot|slot||[vue](./src/apps/App_slot.vue)|
 |teleport|teleport||[vue](./src/apps/App_teleport.vue)|
 |http request|axios||[vue](./src/apps/App_httpRequest.vue)|

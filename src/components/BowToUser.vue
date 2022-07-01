@@ -1,16 +1,12 @@
 <template>
   <h3>{{ msg }} - Object : {{ lectureInfor.title }}</h3>
-  <h3>{{ msg }} - message : {{ message }}</h3>
+  <h3>{{ msg }} - message : {{ propMessage }}, flag : {{ propFlag }}</h3>
+  <h3>{{ msg }} - message : {{ propMessage }}</h3>
 </template>
 <script>
 export default {
   name: "BowToUser",
   props: {
-    // message: String,
-    message: {
-      type: String,
-      default: "Hello World!",
-    },
     lectureInfor: {
       type: Object,
       default: () => ({
@@ -20,6 +16,15 @@ export default {
         image: "-",
       }),
     },
+    propFlag: {
+      type: Boolean,
+      default: false,
+    },
+    propMessage: {
+      type: String,
+      default: "Hello World!",
+    },
+    // propMessage: String,
   },
   data() {
     return {
