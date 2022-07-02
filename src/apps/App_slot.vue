@@ -1,4 +1,5 @@
 <template>
+  <!-- same way CardViewSlot -->
   <card-view-slot>
     <template v-slot:header>
       <h3>Card Template</h3>
@@ -10,15 +11,9 @@
       <small>This is a card footer</small>
     </template>
   </card-view-slot>
-  <CardView>Slot Text</CardView>
-  <CardView>
-    <img
-      src="https:://placeimg.com/100/50/any"
-      width="100"
-      height="50"
-      alt=""
-    />
-  </CardView>
+  <hr />
+  <!-- set default value call in component -->
+  <card-view></card-view>
   <CardView>
     <ul>
       <li>List Item 1</li>
@@ -26,8 +21,10 @@
       <li>List Item 3</li>
     </ul>
   </CardView>
-  <card-view></card-view>
-  <h3>Hello World</h3>
+  <CardView>
+    <img src="https://placeimg.com/300/200/any" alt="" />
+  </CardView>
+  <CardView>Slot Text</CardView>
 </template>
 
 <script>
