@@ -42,11 +42,11 @@ $ npm install
 |components|$emit, receive from chind to parent|[vue](./src/apps/App_componets_emit.vue)|useually vuex|
 |components|Components Dynamic|[vue](./src/apps/App_components_dynamic.vue)||
 |components|slot|[vue](./src/apps/App_slot.vue)||
-|teleport|teleport||[vue](./src/apps/App_teleport.vue)|
-|http request|axios||[vue](./src/apps/App_httpRequest.vue)|
+|teleport|teleport|[vue](./src/apps/App_teleport.vue)||
+|http request|axios|[vue](./src/apps/App_httpRequest.vue)||
 |life cycle|life cycle||[vue](./src/apps/App_lifecycle.vue)|
-|refs|refs||[vue](./src/apps/App_refs.vue)|
-|mixins|mixins|vue2|[vue](./src/apps/App_mixins.vue)|
+|refs|refs|[vue](./src/apps/App_refs.vue)||
+|mixins|mixins|[vue](./src/apps/App_mixins.vue)|vue2|
 |composition API|composition data|vue3|[vue](./src/apps/App_Composition-data.vue)|
 |composition API|composition method|vue3|[vue](./src/apps/App_composition-methods.vue)|
 |composition API|composition wait|vue3|[vue](./src/apps/App_composition-wait.vue)|

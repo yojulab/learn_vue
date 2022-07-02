@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import ComponentsMixins from "./apps/App_mixins.vue";
+import ComponentsRefs from "./apps/App_refs.vue";
 import ComponentsHttpRequest from "./apps/App_httpRequest.vue";
 import ComponentsTeleport from "./apps/App_teleport.vue";
 import ComponentsSlot from "./apps/App_slot.vue";
@@ -17,7 +19,7 @@ export default {
   name: "App",
   data() {
     return {
-      currentApp: "ComponentsHttpRequest",
+      currentApp: "ComponentsMixins",
     };
   },
   components: {
@@ -28,6 +30,8 @@ export default {
     ComponentsSlot,
     ComponentsTeleport,
     ComponentsHttpRequest,
+    ComponentsRefs,
+    ComponentsMixins,
   },
 };
 </script>
