@@ -1,5 +1,6 @@
 <template>
   <h2>Main App Vue</h2>
+  <h3>from provide Object to inject on Third Level</h3>
   <FirstLevel />
 </template>
 
@@ -23,4 +24,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+div * {
+  margin-left: 1rem;
+}
+</style>

@@ -1,5 +1,7 @@
 <template>
-  <h4>Third Level : inject value {{ message }}</h4>
+  <div>
+    <h4>Third Level : inject value {{ message }}</h4>
+  </div>
 </template>
 
 <script>

@@ -37,8 +37,10 @@ $ npm install
 |directives|directives|[vue](./src/apps/App_directives.vue)||
 |computed|cache되어 method보다 performance 유리|[vue](./src/apps/App_computed.vue)||
 |watch|watch|[vue](./src/apps/App_watch.vue)||
-|composition|props|[vue](./src/apps/App_componets_props.vue)||
-|slot|slot||[vue](./src/apps/App_slot.vue)|
+|components|provide inject|[vue](./src/apps/App_componets_provide_inject.vue)||
+|components| composition props |[vue](./src/apps/App_componets_props.vue)||
+|components|$emit, receive from chind to parent|[vue](./src/apps/App_componets_emit.vue)||
+|components|slot|[vue](./src/apps/App_slot.vue)||
 |teleport|teleport||[vue](./src/apps/App_teleport.vue)|
 |http request|axios||[vue](./src/apps/App_httpRequest.vue)|
 |life cycle|life cycle||[vue](./src/apps/App_lifecycle.vue)|

@@ -1,6 +1,8 @@
 <template>
-  <h4>Second Level</h4>
-  <ThirdLevel />
+  <div>
+    <h4>Second Level</h4>
+    <ThirdLevel />
+  </div>
 </template>
 
 <script>

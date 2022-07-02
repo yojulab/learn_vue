@@ -1,6 +1,8 @@
 <template>
-  <h4>First Level</h4>
-  <SecondLevel />
+  <div>
+    <h4>First Level</h4>
+    <SecondLevel />
+  </div>
 </template>
 
 <script>
