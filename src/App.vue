@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import ComponentsHttpRequest from "./apps/App_httpRequest.vue";
+import ComponentsTeleport from "./apps/App_teleport.vue";
 import ComponentsSlot from "./apps/App_slot.vue";
 import ComponentsDynamic from "./apps/App_components_dynamic.vue";
 import ComponentsProvideInject from "./apps/App_componets_provide_inject.vue";
@@ -15,15 +17,17 @@ export default {
   name: "App",
   data() {
     return {
-      currentApp: "ComponentsSlot",
+      currentApp: "ComponentsHttpRequest",
     };
   },
   components: {
-    ComponentsSlot,
-    ComponentsDynamic,
-    ComponentsProvideInject,
-    ComponentsEmit,
     ComponentsProps,
+    ComponentsEmit,
+    ComponentsProvideInject,
+    ComponentsDynamic,
+    ComponentsSlot,
+    ComponentsTeleport,
+    ComponentsHttpRequest,
   },
 };
 </script>

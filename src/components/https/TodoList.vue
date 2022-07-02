@@ -1,6 +1,13 @@
 <template>
   <div>
-    <h3>Todo List</h3>
+    <h3>Todo List Post method</h3>
+    <label for="newTodo">New Todo : </label>
+    <input id="newTodo" v-model="newTodo.title" />
+    <button @click="postNewTodo">post New Todo</button>
+  </div>
+  <hr />
+  <div>
+    <h3>Todo List Get method</h3>
     <button @click="getTodoListFromWeb">get Todo List From Web</button>
     <ul>
       <li v-for="(todo, idx) in todos" :key="idx">
@@ -8,11 +15,6 @@
       </li>
     </ul>
     <p v-if="error">{{ error }}</p>
-  </div>
-  <div>
-    <label for="newTodo">New Todo : </label>
-    <input id="newTodo" v-model="newTodo.title" />
-    <button @click="postNewTodo">post New Todo</button>
   </div>
 </template>
 
@@ -33,7 +35,7 @@ export default {
   methods: {
     getTodoListFromWeb() {
       const url = "https://jsonplaceholder.typicode.com/todos";
-      //   const url = "https://jsonplaceholder.typicode.com/todos1"; // wrong url
+      //   const url = "https://jsonplaceholder.typicode.com/todos1"; // wrong url for catch()
       axios
         .get(url)
         .then((response) => {
