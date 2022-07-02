@@ -4,7 +4,7 @@
   <button @click="currentMenu = 'MenuSecond'">Menu Second</button>
   <button @click="currentMenu = 'MenuThird'">Menu Third</button>
   <div>
-    currentMenu :
+    currentMenu : {{ currentMenu }}
     <keep-alive>
       <component :is="currentMenu"></component>
     </keep-alive>

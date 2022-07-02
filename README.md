@@ -39,7 +39,8 @@ $ npm install
 |watch|watch|[vue](./src/apps/App_watch.vue)||
 |components|provide inject|[vue](./src/apps/App_componets_provide_inject.vue)||
 |components| composition props |[vue](./src/apps/App_componets_props.vue)||
-|components|$emit, receive from chind to parent|[vue](./src/apps/App_componets_emit.vue)||
+|components|$emit, receive from chind to parent|[vue](./src/apps/App_componets_emit.vue)|vuex|
+|components|Components Dynamic|[vue](./src/apps/App_components_dynamic.vue)||
 |components|slot|[vue](./src/apps/App_slot.vue)||
 |teleport|teleport||[vue](./src/apps/App_teleport.vue)|
 |http request|axios||[vue](./src/apps/App_httpRequest.vue)|

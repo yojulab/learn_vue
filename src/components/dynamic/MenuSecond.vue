@@ -8,7 +8,7 @@ export default {
   name: "MenuSecond",
   data() {
     return {
-      message: "Hello Vue!",
+      message: "menu Second",
     };
   },
 };
