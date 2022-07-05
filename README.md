@@ -18,6 +18,9 @@ $ npm install axios
 $ npm install
 ```
 #### vscode Extension : vetur, vue 3 snippet, prettier-code formatter
+#### vue Devtools
++ https://chrome.google.com/webstore > [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
 #### build mode : production, development, none
 #### refer : 
 + 실무 프로젝트에 적용하면 좋은 내용 정리 : https://jess2.xyz/vue/vue-tip/
@@ -48,8 +51,8 @@ $ npm install
 |life cycle|life cycle||[vue](./src/apps/App_lifecycle.vue)|
 |refs|refs|[vue](./src/apps/App_refs.vue)||
 |mixins|mixins|[vue](./src/apps/App_mixins.vue)|vue2|
-|composition API|composition data|vue3|[vue](./src/apps/App_Composition-data.vue)|
+|composition API|composition data|[vue](./src/apps/App_Composition-data.vue)|vue3|
 |composition API|composition method|vue3|[vue](./src/apps/App_composition-methods.vue)|
 |composition API|composition wait|vue3|[vue](./src/apps/App_composition-wait.vue)|
-|composition API|composition ifecycle(?error)|vue3|[vue](./src/apps/App_composition-ifecycle.vue|
-|composition API|composition reusability|vue3|[vue](./src/apps/App_composition-reusability.vue|
+|composition API|composition lifecycle(?error)|vue3|[vue](./src/apps/App_composition-lifecycle.vue)|
+|composition API|composition reusability|vue3|[vue](./src/apps/App_composition-reusability.vue)|
