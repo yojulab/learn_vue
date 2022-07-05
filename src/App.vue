@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import CompositionData from "./apps/App_Composition-data.vue";
 import ComponentsMixins from "./apps/App_mixins.vue";
 import ComponentsRefs from "./apps/App_refs.vue";
 import ComponentsHttpRequest from "./apps/App_httpRequest.vue";
@@ -19,7 +20,7 @@ export default {
   name: "App",
   data() {
     return {
-      currentApp: "ComponentsMixins",
+      currentApp: "CompositionData",
     };
   },
   components: {
@@ -32,6 +33,7 @@ export default {
     ComponentsHttpRequest,
     ComponentsRefs,
     ComponentsMixins,
+    CompositionData,
   },
 };
 </script>
