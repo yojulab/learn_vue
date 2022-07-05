@@ -13,9 +13,10 @@ $ npm run serve
 
 $ npm install axios
 ```
-### second times
+### first times from github
 ```
 $ npm install
+$ npm install -g bootstrap@next
 ```
 #### vscode Extension : vetur, vue 3 snippet, prettier-code formatter
 #### vue Devtools
