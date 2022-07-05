@@ -6,19 +6,20 @@
 ```
 $ node -v. 
 $ npm -v
-$ npm install -g @vue/cli
+$ npm install vue@next
 $ vue --version
-$ vue create with_vue
-$ npm run serve
+$ npm init @vitejs/app learn_vue
+$ cd learn_vue
+$ npm run dev
 
 $ npm install axios
+$ npm install -g bootstrap@next
 ```
 ### first times from github
 ```
 $ npm install
-$ npm install -g bootstrap@next
 ```
-#### vscode Extension : vetur, vue 3 snippet, prettier-code formatter
+#### vscode Extension : Vue Volar extension Pack (or vetur, vue 3 snippet, prettier-code formatte)
 #### vue Devtools
 + https://chrome.google.com/webstore > [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
 
