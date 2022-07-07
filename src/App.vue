@@ -1,7 +1,34 @@
 <template>
-  <keep-alive>
-    <component :is="currentApp"></component>
-  </keep-alive>
+  <h2>Main App Vue</h2>
+  <button @click="currentMenu = 'ComponentsProps'">ComponentsProps</button>
+  <button @click="currentMenu = 'ComponentsEmit'">ComponentsEmit</button>
+  <button @click="currentMenu = 'ComponentsProvideInject'">
+    ComponentsProvideInject
+  </button>
+  <button @click="currentMenu = 'ComponentsDynamic'">ComponentsDynamic</button>
+  <button @click="currentMenu = 'ComponentsSlot'">ComponentsSlot</button>
+  <button @click="currentMenu = 'ComponentsTeleport'">
+    ComponentsTeleport
+  </button>
+  <button @click="currentMenu = 'ComponentsHttpRequest'">
+    ComponentsHttpRequest
+  </button>
+  <button @click="currentMenu = 'ComponentsRefs'">ComponentsRefs</button>
+  <button @click="currentMenu = 'ComponentsMixins'">ComponentsMixins</button>
+  <button @click="currentMenu = 'CompositionData'">CompositionData</button>
+  <button @click="currentMenu = 'CompositionMethods'">
+    CompositionMethods
+  </button>
+  <button @click="currentMenu = 'CompositionWait'">CompositionWatch</button>
+  <button @click="currentMenu = 'CompositionLifecycle'">
+    CompositionLifecycle
+  </button>
+  <div>
+    currentMenu : {{ currentMenu }}
+    <keep-alive>
+      <component :is="currentMenu"></component>
+    </keep-alive>
+  </div>
 </template>
 
 <script>
@@ -23,7 +50,7 @@ export default {
   name: "App",
   data() {
     return {
-      currentApp: "CompositionLifecycle",
+      currentMenu: "",
     };
   },
   components: {
@@ -44,4 +71,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+button {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+</style>
