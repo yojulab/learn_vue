@@ -54,7 +54,7 @@ $ npm install
 |refs|refs|[vue](./src/apps/App_refs.vue)||
 |mixins|mixins|[vue](./src/apps/App_mixins.vue)|vue2|
 |composition API|composition data|[vue](./src/apps/App_Composition-data.vue)|vue3|
-|composition API|composition method|vue3|[vue](./src/apps/App_composition-methods.vue)|
-|composition API|composition wait|vue3|[vue](./src/apps/App_composition-wait.vue)|
+|composition API|composition method|[vue](./src/apps/App_composition-methods.vue)|vue3|
+|composition API|composition watch|[vue](./src/apps/App_composition-wait.vue)|vue3|
 |composition API|composition lifecycle(?error)|vue3|[vue](./src/apps/App_composition-lifecycle.vue)|
 |composition API|composition reusability|vue3|[vue](./src/apps/App_composition-reusability.vue)|

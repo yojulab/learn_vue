@@ -5,6 +5,9 @@
 </template>
 
 <script>
+import CompositionLifecycle from "./apps/App_composition-lifecycle.vue";
+import CompositionWait from "./apps/App_composition-wait.vue";
+import CompositionMethods from "./apps/App_composition-methods.vue";
 import CompositionData from "./apps/App_Composition-data.vue";
 import ComponentsMixins from "./apps/App_mixins.vue";
 import ComponentsRefs from "./apps/App_refs.vue";
@@ -20,7 +23,7 @@ export default {
   name: "App",
   data() {
     return {
-      currentApp: "CompositionData",
+      currentApp: "CompositionLifecycle",
     };
   },
   components: {
@@ -34,6 +37,9 @@ export default {
     ComponentsRefs,
     ComponentsMixins,
     CompositionData,
+    CompositionMethods,
+    CompositionWait,
+    CompositionLifecycle,
   },
 };
 </script>
