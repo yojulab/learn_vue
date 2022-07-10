@@ -4,7 +4,7 @@
   <ChildComposition
     firstMessage="From"
     secondMessage="Message"
-    @sendToParent="receiveFromChild"
+    @receiveFromChild="sendToParent"
   />
 </template>
 
