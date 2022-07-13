@@ -19,7 +19,7 @@
   <button @click="currentMenu = 'CompositionMethods'">
     CompositionMethods
   </button>
-  <button @click="currentMenu = 'CompositionWait'">CompositionWatch</button>
+  <button @click="currentMenu = 'CompositionWatch'">CompositionWatch</button>
   <button @click="currentMenu = 'CompositionLifecycle'">
     CompositionLifecycle
   </button>
@@ -33,7 +33,7 @@
 
 <script>
 import CompositionLifecycle from "./apps/App_composition-lifecycle.vue";
-import CompositionWait from "./apps/App_composition-wait.vue";
+import CompositionWatch from "./apps/App_composition-watch.vue";
 import CompositionMethods from "./apps/App_composition-methods.vue";
 import CompositionData from "./apps/App_Composition-data.vue";
 import ComponentsMixins from "./apps/App_mixins.vue";
@@ -65,7 +65,7 @@ export default {
     ComponentsMixins,
     CompositionData,
     CompositionMethods,
-    CompositionWait,
+    CompositionWatch,
     CompositionLifecycle,
   },
 };
