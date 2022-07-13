@@ -1,14 +1,14 @@
 <template>
   <h3>Hello World</h3>
-  <CompositionWait />
+  <CompositionWatch />
 </template>
 
 <script>
-import CompositionWait from "../components/compositions/CompositionWait.vue";
+import CompositionWatch from "../components/compositions/CompositionWatch.vue";
 export default {
   name: "App",
   components: {
-    CompositionWait,
+    CompositionWatch,
   },
 };
 </script>
