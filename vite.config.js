@@ -4,10 +4,9 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: "/learn_vue",
+  build: {
+    outDir: "docs",
+    emptyOutDir: true,
+  },
 });
-
-// legacy build command
-// module.exports = {
-//   publicPath: process.env.NODE_ENV === "production" ? "/learn_vue" : "/",
-//   outputDir: "docs",
-// };

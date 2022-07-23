@@ -23,6 +23,13 @@
   <button @click="currentMenu = 'CompositionLifecycle'">
     CompositionLifecycle
   </button>
+  <button @click="currentMenu = 'CompositionLifecycle'">
+    CompositionLifecycle
+  </button>
+  <button @click="currentMenu = 'CompositionReusability'">
+    CompositionReusability
+  </button>
+
   <div>
     currentMenu : {{ currentMenu }}
     <keep-alive>
@@ -32,6 +39,7 @@
 </template>
 
 <script>
+import CompositionReusability from "./apps/App_composition-reusability.vue";
 import CompositionLifecycle from "./apps/App_composition-lifecycle.vue";
 import CompositionWatch from "./apps/App_composition-watch.vue";
 import CompositionMethods from "./apps/App_composition-methods.vue";
@@ -67,6 +75,7 @@ export default {
     CompositionMethods,
     CompositionWatch,
     CompositionLifecycle,
+    CompositionReusability,
   },
 };
 </script>
