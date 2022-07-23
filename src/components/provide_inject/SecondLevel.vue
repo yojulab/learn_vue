@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>Second Level</h4>
+    <h4>Second Level: inject value {{ message }}</h4>
     <ThirdLevel />
   </div>
 </template>
@@ -9,6 +9,8 @@
 import ThirdLevel from "./ThirdLevel.vue";
 export default {
   name: "SecondLevel",
+  inject: ["message"],
+
   components: {
     ThirdLevel,
   },

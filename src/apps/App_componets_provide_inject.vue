@@ -1,5 +1,6 @@
 <template>
   <h2>Main App Vue</h2>
+  <h3>Message : {{ message }}</h3>
   <h3>from provide Object to inject on Third Level</h3>
   <FirstLevel />
 </template>
