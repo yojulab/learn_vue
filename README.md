@@ -1,4 +1,4 @@
-#### with_vue
+#### vue
 + official nodejs : https://nodejs.org/
 + official npmjs : https://www.npmjs.com/
 + official vuejs : https://vuejs.org/. 
@@ -28,6 +28,16 @@ $ npm install
 + 실무 프로젝트에 적용하면 좋은 내용 정리 : https://jess2.xyz/vue/vue-tip/
 + https://youtube.com/playlist
 + https://mailtrap.io/ 
+
+### useful Tools
+
+- webpack : https://webpack.js.org/
+- Typescript web https://www.typescriptlang.org/play
+- JavaScript : https://codepen.io/
+- VScode Extention : Vuter, Vue3 Snippet, Prettier -> Vue Extension Pack
+- VScode UI Setting : Menu > Code > Preference > Settings
+  - search 'format' > Check Editor:Format On Save
+  - search 'default format' > Select 'Prettier-Code Formatter' on Editor:Default Formatter.
 
 | 주제 | 주요 항목 | 작성 | 참조 |
 | :---: | --- |  --- | :---: |
