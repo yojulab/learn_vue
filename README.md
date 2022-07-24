@@ -14,6 +14,7 @@ $ npm run dev
 
 $ npm install axios
 $ npm install -g bootstrap@next
+$ npm install vue-router@next
 ```
 ### first times from github
 ```
@@ -56,7 +57,7 @@ $ npm install
 |components|provide inject|[vue](./src/apps/App_componets_provide_inject.vue)||
 |components| composition props |[vue](./src/apps/App_componets_props.vue)||
 |components|$emit, receive from chind to parent|[vue](./src/apps/App_componets_emit.vue)|useually vuex|
-|components|Components Dynamic|[vue](./src/apps/App_components_dynamic.vue)||
+|components|Components Dynamic|[vue](./src/apps/App_components_dynamic.vue), [vue menu](./src/apps/App_Dynamic_Menu.vue)||
 |components|slot|[vue](./src/apps/App_slot.vue)||
 |teleport|teleport|[vue](./src/apps/App_teleport.vue)||
 |http request|axios|[vue](./src/apps/App_httpRequest.vue)||
