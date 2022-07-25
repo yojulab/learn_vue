@@ -1,5 +1,6 @@
 import { defineComponent } from "vue";
 import ComponentsEmit from "../apps/App_componets_emit.vue";
+import RouterLink from "../components/dynamic/RouterLink.vue";
 
 // lazy load components for better performance
 const CompositionLifecycle = () => {
@@ -46,6 +47,7 @@ const NotFound = defineComponent({
   template: "<div>Not Found</div>",
 });
 const routes = [
+  { path: "/router-link", component: RouterLink, name: "RouterLink" },
   { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
   { path: "/", redirect: "/components-props" },
   {

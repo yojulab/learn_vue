@@ -36,12 +36,7 @@
   <button @click="$router.push({ name: 'CompositionWatch' })">
     CompositionWatch
   </button>
-  <button @click="$router.push({ name: 'CompositionLifecycle' })">
-    CompositionLifecycle
-  </button>
-  <button @click="$router.push({ name: 'CompositionReusability' })">
-    CompositionReusability
-  </button>
+  <button @click="$router.push({ name: 'RouterLink' })">RouterLink</button>
 
   <div>
     <router-view></router-view>
@@ -57,4 +52,7 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+a {
+}
+</style>
