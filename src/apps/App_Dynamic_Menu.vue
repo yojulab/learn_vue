@@ -23,9 +23,6 @@
   <button @click="currentMenu = 'CompositionLifecycle'">
     CompositionLifecycle
   </button>
-  <button @click="currentMenu = 'CompositionLifecycle'">
-    CompositionLifecycle
-  </button>
   <button @click="currentMenu = 'CompositionReusability'">
     CompositionReusability
   </button>

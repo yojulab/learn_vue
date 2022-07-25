@@ -1,5 +1,48 @@
 <template>
-  <h3>Hello World</h3>
+  <h3>Router Menu</h3>
+  <button @click="$router.push({ path: '/components-props' })">
+    ComponentsProps
+  </button>
+  <button @click="$router.push({ path: '/components-emit' })">
+    ComponentsEmit
+  </button>
+  <button @click="$router.push({ name: 'ComponentsProvideInject' })">
+    ComponentsProvideInject
+  </button>
+  <button @click="$router.push({ name: 'ComponentsDynamic' })">
+    ComponentsDynamic
+  </button>
+  <button @click="$router.push({ name: 'ComponentsSlot' })">
+    ComponentsSlot
+  </button>
+  <button @click="$router.push({ name: 'ComponentsTeleport' })">
+    ComponentsTeleport
+  </button>
+  <button @click="$router.push({ name: 'ComponentsHttpRequest' })">
+    ComponentsHttpRequest
+  </button>
+  <button @click="$router.push({ name: 'ComponentsRefs' })">
+    ComponentsRefs
+  </button>
+  <button @click="$router.push({ name: 'ComponentsMixins' })">
+    ComponentsMixins
+  </button>
+  <button @click="$router.push({ name: 'CompositionData' })">
+    CompositionData
+  </button>
+  <button @click="$router.push({ name: 'CompositionMethods' })">
+    CompositionMethods
+  </button>
+  <button @click="$router.push({ name: 'CompositionWatch' })">
+    CompositionWatch
+  </button>
+  <button @click="$router.push({ name: 'CompositionLifecycle' })">
+    CompositionLifecycle
+  </button>
+  <button @click="$router.push({ name: 'CompositionReusability' })">
+    CompositionReusability
+  </button>
+
   <div>
     <router-view></router-view>
   </div>

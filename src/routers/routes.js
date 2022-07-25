@@ -1,18 +1,46 @@
 import { defineComponent } from "vue";
-import CompositionReusability from "../apps/App_composition-reusability.vue";
-import CompositionLifecycle from "../apps/App_composition-lifecycle.vue";
-import CompositionWatch from "../apps/App_composition-watch.vue";
-import CompositionMethods from "../apps/App_composition-methods.vue";
-import CompositionData from "../apps/App_Composition-data.vue";
-import ComponentsMixins from "../apps/App_mixins.vue";
-import ComponentsRefs from "../apps/App_refs.vue";
-import ComponentsHttpRequest from "../apps/App_httpRequest.vue";
-import ComponentsTeleport from "../apps/App_teleport.vue";
-import ComponentsSlot from "../apps/App_slot.vue";
-import ComponentsDynamic from "../apps/App_components_dynamic.vue";
-import ComponentsProvideInject from "../apps/App_componets_provide_inject.vue";
 import ComponentsEmit from "../apps/App_componets_emit.vue";
-import ComponentsProps from "../apps/App_componets_props.vue";
+
+// lazy load components for better performance
+const CompositionLifecycle = () => {
+  return import("../apps/App_composition-lifecycle.vue");
+};
+const CompositionWatch = () => {
+  return import("../apps/App_composition-watch.vue");
+};
+const CompositionMethods = () => {
+  return import("../apps/App_composition-methods.vue");
+};
+const CompositionData = () => {
+  return import("../apps/App_Composition-data.vue");
+};
+const ComponentsMixins = () => {
+  return import("../apps/App_mixins.vue");
+};
+const ComponentsRefs = () => {
+  return import("../apps/App_refs.vue");
+};
+const ComponentsHttpRequest = () => {
+  return import("../apps/App_httpRequest.vue");
+};
+const ComponentsTeleport = () => {
+  return import("../apps/App_teleport.vue");
+};
+const ComponentsSlot = () => {
+  return import("../apps/App_slot.vue");
+};
+const ComponentsDynamic = () => {
+  return import("../apps/App_components_dynamic.vue");
+};
+const ComponentsProvideInject = () => {
+  return import("../apps/App_componets_provide_inject.vue");
+};
+const CompositionReusability = () => {
+  return import("../apps/App_composition-reusability.vue");
+};
+const ComponentsProps = () => {
+  return import("../apps/App_componets_props.vue");
+};
 
 const NotFound = defineComponent({
   template: "<div>Not Found</div>",
@@ -23,72 +51,72 @@ const routes = [
   {
     path: "/composition-reusability",
     component: CompositionReusability,
-    name: "composition-reusability",
+    name: "CompositionReusability",
   },
   {
     path: "/composition-lifecycle",
     component: CompositionLifecycle,
-    name: "composition-lifecycle",
+    name: "CompositionLifecycle",
   },
   {
     path: "/composition-watch",
     component: CompositionWatch,
-    name: "composition-watch",
+    name: "CompositionWatch",
   },
   {
     path: "/composition-methods",
     component: CompositionMethods,
-    name: "composition-methods",
+    name: "CompositionMethods",
   },
   {
     path: "/composition-data",
     component: CompositionData,
-    name: "composition-data",
+    name: "CompositionData",
   },
   {
     path: "/components-mixins",
     component: ComponentsMixins,
-    name: "components-mixins",
+    name: "ComponentsMixins",
   },
   {
     path: "/components-refs",
     component: ComponentsRefs,
-    name: "components-refs",
+    name: "ComponentsRefs",
   },
   {
     path: "/components-httpRequest",
     component: ComponentsHttpRequest,
-    name: "components-httpRequest",
+    name: "ComponentsHttpRequest",
   },
   {
     path: "/components-teleport",
     component: ComponentsTeleport,
-    name: "components-teleport",
+    name: "ComponentsTeleport",
   },
   {
     path: "/components-slot",
     component: ComponentsSlot,
-    name: "components-slot",
+    name: "ComponentsSlot",
   },
   {
     path: "/components-dynamic",
     component: ComponentsDynamic,
-    name: "components-dynamic",
+    name: "ComponentsDynamic",
   },
   {
     path: "/components-provide-inject",
     component: ComponentsProvideInject,
-    name: "components-provide-inject",
+    name: "ComponentsProvideInject",
   },
   {
     path: "/components-emit",
     component: ComponentsEmit,
-    name: "components-emit",
+    name: "ComponentsEmit",
   },
   {
     path: "/components-props",
     component: ComponentsProps,
-    name: "components-props",
+    name: "ComponentsProps",
   },
 ];
 
