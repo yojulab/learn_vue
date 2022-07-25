@@ -18,6 +18,8 @@ const NotFound = defineComponent({
   template: "<div>Not Found</div>",
 });
 const routes = [
+  { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
+  { path: "/", redirect: "/components-props" },
   {
     path: "/composition-reusability",
     component: CompositionReusability,
@@ -88,8 +90,6 @@ const routes = [
     component: ComponentsProps,
     name: "components-props",
   },
-  { path: "/", redirect: "/composition-reusability" },
-  { path: "*", component: NotFound },
 ];
 
 export default routes;
