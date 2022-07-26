@@ -13,7 +13,7 @@ $ cd learn_vue
 $ npm run dev
 
 $ npm install axios
-$ npm install -g bootstrap@next
+$ npm install -g bootstrap@latest
 $ npm install vue-router@next
 ```
 ### first times from github
