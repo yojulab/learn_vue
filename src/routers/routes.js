@@ -1,7 +1,10 @@
 import { defineComponent } from "vue";
 import ComponentsEmit from "../apps/App_componets_emit.vue";
 import RouterLink from "../components/dynamic/RouterLink.vue";
-
+// import { defineConfig, loadEnv } from "vite";
+// process.env = { ...process.env, ...loadEnv(process.cwd()) };
+// console.log(process.env);
+const base_path = "/learn_vue";
 // lazy load components for better performance
 const CompositionLifecycle = () => {
   return import("../apps/App_composition-lifecycle.vue");
@@ -47,76 +50,84 @@ const NotFound = defineComponent({
   template: "<div>Not Found</div>",
 });
 const routes = [
-  { path: "/router-link", component: RouterLink, name: "RouterLink" },
-  { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
-  { path: "/", redirect: "/components-props" },
   {
-    path: "/composition-reusability",
+    path: base_path + "/router-link",
+    component: RouterLink,
+    name: "RouterLink",
+  },
+  {
+    path: base_path + "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: NotFound,
+  },
+  { path: base_path + "/", redirect: "/components-props" },
+  {
+    path: base_path + "/composition-reusability",
     component: CompositionReusability,
     name: "CompositionReusability",
   },
   {
-    path: "/composition-lifecycle",
+    path: base_path + "/composition-lifecycle",
     component: CompositionLifecycle,
     name: "CompositionLifecycle",
   },
   {
-    path: "/composition-watch",
+    path: base_path + "/composition-watch",
     component: CompositionWatch,
     name: "CompositionWatch",
   },
   {
-    path: "/composition-methods",
+    path: base_path + "/composition-methods",
     component: CompositionMethods,
     name: "CompositionMethods",
   },
   {
-    path: "/composition-data",
+    path: base_path + "/composition-data",
     component: CompositionData,
     name: "CompositionData",
   },
   {
-    path: "/components-mixins",
+    path: base_path + "/components-mixins",
     component: ComponentsMixins,
     name: "ComponentsMixins",
   },
   {
-    path: "/components-refs",
+    path: base_path + "/components-refs",
     component: ComponentsRefs,
     name: "ComponentsRefs",
   },
   {
-    path: "/components-httpRequest",
+    path: base_path + "/components-httpRequest",
     component: ComponentsHttpRequest,
     name: "ComponentsHttpRequest",
   },
   {
-    path: "/components-teleport",
+    path: base_path + "/components-teleport",
     component: ComponentsTeleport,
     name: "ComponentsTeleport",
   },
   {
-    path: "/components-slot",
+    path: base_path + "/components-slot",
     component: ComponentsSlot,
     name: "ComponentsSlot",
   },
   {
-    path: "/components-dynamic",
+    path: base_path + "/components-dynamic",
     component: ComponentsDynamic,
     name: "ComponentsDynamic",
   },
   {
-    path: "/components-provide-inject",
+    path: base_path + "/components-provide-inject",
     component: ComponentsProvideInject,
     name: "ComponentsProvideInject",
   },
   {
-    path: "/components-emit",
+    path: base_path + "/components-emit",
     component: ComponentsEmit,
     name: "ComponentsEmit",
   },
   {
-    path: "/components-props",
+    path: base_path + "/components-props",
     component: ComponentsProps,
     name: "ComponentsProps",
   },

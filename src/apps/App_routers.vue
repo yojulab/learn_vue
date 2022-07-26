@@ -1,11 +1,11 @@
 <template>
   <h3>Router Menu</h3>
-  <button @click="$router.push({ path: '/components-props' })">
+  <!-- <button @click="$router.push({ path: '/components-props' })">
     ComponentsProps
-  </button>
-  <button @click="$router.push({ path: '/components-emit' })">
+  </button> -->
+  <!-- <button @click="$router.push({ path: '/components-emit' })">
     ComponentsEmit
-  </button>
+  </button> -->
   <button @click="$router.push({ name: 'ComponentsProvideInject' })">
     ComponentsProvideInject
   </button>
