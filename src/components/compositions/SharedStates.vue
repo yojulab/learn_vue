@@ -1,5 +1,6 @@
 <template>
-  <h3>Main SharedState</h3>
+  <h3>Sub SharedState</h3>
+
   <div>
     <label for="isloading">Check:</label>
     <input v-model="stores.states.isLoading" type="checkbox" id="isloading" />
@@ -19,12 +20,10 @@
     />
     {{ stores.states.people.description }}
   </div>
-  <SharedStates> </SharedStates>
 </template>
 
 <script setup>
 import { inject } from "vue";
-import SharedStates from "./components/compositions/SharedStates.vue";
 
 const stores = inject("stores");
 </script>
