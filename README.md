@@ -61,7 +61,7 @@ $ npm install
 |components|slot|[vue](./src/apps/App_slot.vue)||
 |teleport|teleport|[vue](./src/apps/App_teleport.vue)||
 |http request|axios|[vue](./src/apps/App_httpRequest.vue)||
-|life cycle|life cycle||[vue](./src/apps/App_lifecycle.vue)|
+|life cycle|life cycle|[vue](./src/apps/App_lifecycle.vue)||
 |refs|refs|[vue](./src/apps/App_refs.vue)||
 |mixins|mixins|[vue](./src/apps/App_mixins.vue)|vue2|
 |composition API|composition data|[vue](./src/apps/App_Composition-data.vue)|vue3|
