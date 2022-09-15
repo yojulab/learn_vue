@@ -68,6 +68,6 @@ $ npm install
 |composition API|composition method|[vue](./src/apps/App_composition-methods.vue)|vue3|
 |composition API|composition watch|[vue](./src/apps/App_composition-watch.vue)|vue3|
 |composition API|composition lifecycle|[vue](./src/apps/App_composition-lifecycle.vue)|vue3|
-|composition API|composition reusability|vue3|[vue](./src/apps/App_composition-reusability.vue)|
+|composition API|composition reusability|[vue](./src/apps/App_composition-reusability.vue)|vue3|
 |router|router-view, router-liink|[vue](./src/apps/App_routers.vue)|[youtube](https://youtube.com/playlist?list=PLZzSdj89sCN0IRcwT4lJWg_qgfBFmcF6A)|
-|composition API|shared global state|[vue](./src/apps/App_shared-states.vue)||
+|composition API|shared global state|[vue](./src/apps/App_shared-states.vue)|provide(), inject()|
