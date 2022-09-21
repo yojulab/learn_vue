@@ -1,7 +1,8 @@
 #### vue https://sanghunoh.github.io/learn_vue/
 + official nodejs : https://nodejs.org/
 + official npmjs : https://www.npmjs.com/
-+ official vuejs : https://vuejs.org/. 
++ official vuejs : https://vuejs.org/., https://vuejs.org/examples/
+
 ### first time
 ```
 $ node -v. 
