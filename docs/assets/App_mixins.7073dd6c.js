@@ -1,1 +1,0 @@
-import{S as a,F as s}from"./FeeAmount.971a6547.js";import{_ as m,o as r,a as c,m as e,F as p,b as _,l as o}from"./index.c57dcf90.js";const l={name:"App",components:{SavingAmount:a,FeeAmount:s}},u=_("h3",null,"Hello World",-1);function i(d,A,f,F,v,g){const n=o("SavingAmount"),t=o("FeeAmount");return r(),c(p,null,[u,e(n),e(t)],64)}var $=m(l,[["render",i]]);export{$ as default};
