@@ -1,4 +1,5 @@
-#### vue https://sanghunoh.github.io/learn_vue/
+### [github page](https://yojulab.github.io/learn_vue/)
+#### useful official vue 
 + official nodejs : https://nodejs.org/
 + official npmjs : https://www.npmjs.com/
 + official vuejs : https://vuejs.org/., [examples](https://vuejs.org/examples/), [play ground](https://sfc.vuejs.org/)
