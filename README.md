@@ -42,6 +42,14 @@ $ npm install
   - search 'format' > Check Editor:Format On Save
   - search 'default format' > Select 'Prettier-Code Formatter' on Editor:Default Formatter.
 
+### 목차 with CDN
+| 주제 | 주요 구성 | 비고 | 
+|--|--|--|
+| [CDN 이용 Vue 구현](./basicWithCDN/)| Vue instance, computed, methods, watch | v-model, watch with deep |
+| CDN 이용 Components 구현 | [global](./basicWithCDN/04_global_components.html), [local](./basicWithCDN/05_local_components.html) |  |
+| CDN 이용 Components Communication 전달 구현 | [props](./basicWithCDN/06_component_communication_props.html), [events](./basicWithCDN/07_component_communication_events.html) | v-bind |
+
+### 목차 with node
 | 주제 | 주요 항목 | 작성 | 참조 |
 | :---: | --- |  --- | :---: |
 |맛보기|CDN vue, with Go Live|[html](./vue_with_cdn.html)|[uri](https://v2.vuejs.org/v2/guide/installation.html?redirect=true)|

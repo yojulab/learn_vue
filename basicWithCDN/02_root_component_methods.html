@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vue application 동작 div 설정 -->
+    <div id="app">
+        <div>
+            <!-- directive -->
+            1보다 큰수 : <input type="number" name="" id="" v-model="num">
+            <div>
+                1 부터 입력한 숫자까지 합 : {{sum()}}
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- CDN : https://unpkg.com/vue@3.5.7/dist/vue.global.js -->
+<script src="https://unpkg.com/vue"></script>
+
+<!-- implements Vue application with script -->
+<script>
+    const model = {
+        num: 0
+    };
+
+    // Vue.createApp(options): Vue instance를 생성
+    const rootComponent = Vue.createApp({
+        name : `App`,
+        data() {
+            return model;
+        }, 
+        methods : {
+            sum() {
+                return (this.num * (this.num+1)) /2;
+            },
+        }
+    }).mount('#app');;
+    
+</script>
+</html>

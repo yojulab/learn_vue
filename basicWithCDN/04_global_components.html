@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vue application 동작 div 설정 -->
+    <div id="app">
+        <div>
+            <button type="button">root button</button>
+            <globel-component></globel-component>
+        </div>
+    </div>
+</body>
+
+<!-- CDN : https://unpkg.com/vue@3.5.7/dist/vue.global.js -->
+<script src="https://unpkg.com/vue"></script>
+
+<!-- implements Vue application with script -->
+<script>
+    // Vue.createApp(options): Vue instance를 생성
+    const app = Vue.createApp({
+        name : `App`,
+        data() {
+            return {
+                message : `Hello, Root Component !`,
+            };
+        }, 
+    });
+
+    app.component(`globel-component`, {
+        data() {
+            return {
+                globel_message : `Hello, Global Component!`,
+            };
+        },
+        computed: {},
+        methods : {},
+        template: `
+            <div>
+                <h2>globel data message : {{ globel_message }}</h2>
+            </div>`,
+    });
+
+    const rootComponent = app.mount('#app');
+</script>
+</html>

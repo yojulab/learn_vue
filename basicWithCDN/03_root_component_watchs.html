@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vue application 동작 div 설정 -->
+    <div id="app">
+        <div>
+            <!-- directive -->
+            <div>
+                X : <input type="number" name="" id="" v-model="numX">
+            </div>
+            <div>
+                Y : <input type="number" name="" id="" v-model="numY">
+            </div>
+            <div>
+                합 : {{sum}}
+            </div>
+            <hr>
+            <h3>Refer Object with watch</h3>
+            <div>
+                X : <input type="number" name="" id="" v-model="values.object_numX">
+            </div>
+            <div>
+                Y : <input type="number" name="" id="" v-model="values.object_numY">
+            </div>
+            <div>
+                합 : {{object_sum}}
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- CDN : https://unpkg.com/vue@3.5.7/dist/vue.global.js -->
+<script src="https://unpkg.com/vue"></script>
+
+<!-- implements Vue application with script -->
+<script>
+    // Vue.createApp(options): Vue instance를 생성
+    const rootComponent = Vue.createApp({
+        name : `App`,
+        data() {
+            return {
+                numX: 0,
+                numY: 0,
+                sum: 0,
+                values : {
+                    object_numX: 0,
+                    object_numY: 0,
+                },
+                object_sum: 0,
+            };
+        }, 
+        computed : {},
+        methods : {},
+        watch : {
+            numX(current, old) {
+                return this.sum = current + this.numY;
+            },
+            numY(current, old) {
+                return this.sum = this.numX + current;
+            },
+            /* values(current, old) {
+                return this.object_sum = current.object_numX + current.object_numY;
+            }, */
+            values: {
+                handler(current, old) {
+                    return this.object_sum = current.object_numX + current.object_numY;
+                },
+                deep: true,
+            }
+        }
+    }).mount('#app');;
+    
+</script>
+</html>
