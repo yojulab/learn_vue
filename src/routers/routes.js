@@ -4,7 +4,7 @@ import RouterLink from "../components/dynamic/RouterLink.vue";
 // import { defineConfig, loadEnv } from "vite";
 // process.env = { ...process.env, ...loadEnv(process.cwd()) };
 // console.log(process.env);
-const base_path = "/learn_vue";
+const base_path = "";
 // lazy load components for better performance
 const CompositionLifecycle = () => {
   return import("../apps/App_composition-lifecycle.vue");
