@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vue application 동작 div 설정 -->
+    <div id="app">
+        <div>
+            <!-- Mustache syntex  -->
+            <h2>{{message}}</h2>
+            <h2 v-text="message_withhtml">v-text : </h2>
+            <h2 v-html="message_withhtml"></h2>
+            <div>
+                <div>
+                    v-bind directive :
+                    <input type="text" name="" id="" v-bind:value="message">
+                </div>
+                <div>
+                    without v-bind directive :
+                    <input type="text" name="" id="" :value="message">
+                </div>
+                <div>
+                    v-model directive with hidden:
+                    <input type="text" name="" id="" v-model="message">
+                    <input type="hidden" name="" id="" v-model="message">
+                </div>
+                <div>
+                    <img :src="image_uri" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- CDN : https://unpkg.com/vue@3.5.7/dist/vue.global.js -->
+<script src="https://unpkg.com/vue"></script>
+
+<!-- implements Vue application with script -->
+<script>
+    const model = {
+        message: 'soooooo good ! ',
+        message_withhtml: '<i> soooooo good ! </i>',
+        image_uri: 'https://loremflickr.com/200/200?random=1'
+    };
+
+    // Vue.createApp(options): Vue instance를 생성
+    const app = Vue.createApp({
+        name : `App`,
+        data : function() {
+            return model;
+        }
+    });
+
+    // app.mount('#app'): Vue instance를 HTML element(id='app')에 mount
+    const rootComponent = app.mount('#app');
+    rootComponent.message = `change message !`;
+</script>
+</html>

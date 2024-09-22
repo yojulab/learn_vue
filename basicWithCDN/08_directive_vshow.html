@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Vue application 동작 div 설정 -->
+    <div id="app">
+        <div>
+            <h2>v-show</h2>
+            <h2>Available Loans : {{availableloan}}</h2>
+            <h2>Loaned Amount : <input type="number" name="" id="" v-model="loanedamount"></h2>
+            <h2>loan remaining Amount : <span v-show="(availableloan - loanedamount) > 0">{{availableloan - loanedamount}}</span> </h2>
+            <hr>
+            <h2>v-if</h2>
+            <div>
+
+                잔고 : <input type="number" v-model="balance">
+                <br><br>
+                회원등급:
+                <span v-if="balance > 1000000">Gold</span>
+                <span v-else-if="balance >= 500000">Silver</span>
+                <span v-else-if="balance >= 100000">Bronze</span>
+                <span v-else>Basic</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- CDN : https://unpkg.com/vue@3.5.7/dist/vue.global.js -->
+<script src="https://unpkg.com/vue"></script>
+
+<!-- implements Vue application with script -->
+<script>
+    const model = {
+        availableloan: 4000,
+        loanedamount: 200,
+        balance: 0
+    };
+
+    // Vue.createApp(options): Vue instance를 생성
+    const app = Vue.createApp({
+        name: `App`,
+        data: function () {
+            return model;
+        }
+    });
+
+    // app.mount('#app'): Vue instance를 HTML element(id='app')에 mount
+    const rootComponent = app.mount('#app');
+</script>
+
+</html>

@@ -1,19 +1,11 @@
 # Base image
-FROM node:18
+FROM node:20
 
 # Working directory
 WORKDIR /apps
 
-RUN git clone -b main https://github.com/yoju-lab/study_vues
+RUN git clone -b main https://github.com/yojulab/learn_vues
 
-# Copy package.json and package-lock.json
-# COPY package*.json ./
-
+WORKDIR /apps/learn_vues
 # Install dependencies
-# RUN npm init
-
-# Copy the rest of the application code
-# COPY . .
-
-# Command to run the app
-# CMD ["npm", "run", "dev"]
+RUN npm install -g npm
