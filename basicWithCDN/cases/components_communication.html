@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue CDN Example</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <globel-component-a>
+        <local-component-c></local-component-c>
+        <local-component-d>
+          <div>{{ output }}</div>
+        </local-component-d>
+      </globel-component-a>
+      <globel-component-b>
+        <local-component-c></local-component-c>
+        <local-component-d>
+          input: <input type="text" v-model="inputValue">
+          <button @click="updateOutput">Click</button>
+        </local-component-d>
+      </globel-component-b>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@2.6.14"></script>
+  <script>
+    // 전역 컴포넌트 정의
+    Vue.component('globel-component-a', {
+      template: `
+        <div>
+          <h3>Global Component A</h3>
+          <slot></slot>
+        </div>
+      `
+    });
+
+    Vue.component('globel-component-b', {
+      template: `
+        <div>
+          <h3>Global Component B</h3>
+          <slot></slot>
+        </div>
+      `
+    });
+
+    // 지역 컴포넌트 정의
+    const localComponentC = {
+      template: `
+        <div>
+          <h4>Local Component C</h4>
+        </div>
+      `
+    };
+
+    const localComponentD = {
+      template: `
+        <div>
+          <h4>Local Component D</h4>
+          <slot></slot>
+        </div>
+      `
+    };
+
+    // Vue 인스턴스 생성
+    new Vue({
+      el: '#app',
+      components: {
+        'local-component-c': localComponentC,
+        'local-component-d': localComponentD
+      },
+      data() {
+        return {
+          inputValue: '',  // input에서 입력되는 값
+          output: ''       // output에 표시되는 값
+        };
+      },
+      methods: {
+        updateOutput() {
+          this.output = this.inputValue;  // 버튼 클릭 시 output에 input 값을 설정
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
